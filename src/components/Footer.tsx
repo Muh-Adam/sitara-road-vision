@@ -4,7 +4,7 @@ const navLinks = [
   { label: "Beranda", href: "/" },
   { label: "Tentang", href: "/tentang" },
   { label: "Layanan", href: "/layanan" },
-  { label: "Mengapa Kami", href: "/mengapa-kami" },
+  { label: "Keunggulan", href: "/mengapa-kami" },
   { label: "Berita", href: "/berita" },
   { label: "Laporkan", href: "/lapor" },
 ];

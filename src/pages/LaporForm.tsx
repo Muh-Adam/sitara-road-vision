@@ -96,22 +96,21 @@ const LaporForm = () => {
                       className="bg-secondary/30 border-border/50"
                     />
                   </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Gmail</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="contoh@gmail.com"
+                      value={form.email}
+                      onChange={handleChange}
+                      required={!isAnonymous}
+                      className="bg-secondary/30 border-border/50"
+                    />
+                  </div>
                 </>
               )}
-
-              <div className="space-y-2">
-                <Label htmlFor="email">Gmail</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="contoh@gmail.com"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  className="bg-secondary/30 border-border/50"
-                />
-              </div>
 
               <div className="space-y-2">
                 <Label htmlFor="koordinat">Koordinat Jalan Rusak</Label>
