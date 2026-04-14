@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -17,13 +18,13 @@ const CTASection = () => {
           <p className="mx-auto mt-4 max-w-lg text-muted-foreground">
             Hubungi tim kami untuk demo platform SITARA dan mulai transformasi digital pengelolaan infrastruktur jalan.
           </p>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <button className="rounded-xl bg-primary px-8 py-4 font-heading text-sm font-semibold text-primary-foreground transition-all hover:scale-105">
-              Jadwalkan Demo
-            </button>
-            <button className="rounded-xl border border-border px-8 py-4 font-heading text-sm font-semibold text-foreground transition-all hover:border-primary/50">
-              Unduh White Paper
-            </button>
+          <div className="mt-8 flex justify-center">
+            <Link
+              to="/lapor"
+              className="rounded-xl bg-primary px-8 py-4 font-heading text-sm font-semibold text-primary-foreground transition-all hover:scale-105"
+            >
+              Laporkan Sekarang
+            </Link>
           </div>
         </motion.div>
       </div>
